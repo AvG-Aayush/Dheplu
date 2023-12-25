@@ -1,0 +1,344 @@
+.root{
+    --circle-outline:#fff;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kenia', sans-serif;
+    box-sizing: border-box;
+} 
+html, 
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #181818;
+}
+.loader{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+background-image: url(1056643.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+opacity: 0.5;
+}
+.counter{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #fff; 
+    padding: 2rem 4rem;
+    font-size: 10vw;
+    font-family: "Saol Display";
+    font-weight: lighter;
+    font-style:italic;
+    z-index: 1000;
+}
+.site-teaser span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem 4rem;
+    color: var #fff;
+    font-size: 1rem;
+    font-family: "Saol Display";
+    font-weight: lighter;
+    font-style: italic;
+}
+.circles{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+.circle-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    background-image: url(=.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-r
+}
+.circle-inner-rotator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    width: 162.5px;
+    height: 162.5px;
+    background-image: url(love.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.block{
+    position: absolute;
+    top: -100px;
+    left: 200px;
+    width: 0px;
+    height: 0px;
+    display: none;
+    border: 1px solid #fff;
+    transform-origin: bottom;
+}
+.cn1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url('teddy.gif') ;
+    
+}
+
+
+body{
+    display: flex;
+    background-image: url("792513.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+min-height: 100vh;
+overflow: hidden;
+background-size: cover;
+    height: 100vh;
+    background-position: center;
+    
+}
+.login{
+    position: absolute;
+    width: 340px;
+   
+    
+    
+}
+.login form{
+    width: 100%;
+    padding: 0 50px;
+
+}
+h2{
+    font-size: 3em;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+h3{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+#cop{
+    position: relative;
+    margin-right: 10px;
+    font-size: 20px;
+      border-radius: 12px 0px 12px 0px;
+  margin-left: 20px;
+  cursor: pointer;
+  background: rgba(#f20044 0.6);
+  
+  z-index: 0;
+  }#poc{
+    position: relative;
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 0 12px 0 12px;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 0; 
+  
+  }
+  #cop::after{
+    content:"";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  
+    left: 0;
+    top: 0;
+    border-radius: 12px 0px 12px 0px;
+  }
+  #poc::after{
+    content:"";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    left: 0;
+    top: 0;
+    border-radius: 0 12px 0 12px;
+  }
+  #cop::before{
+    content: "";
+    background: linear-gradient(45deg, #FF0000,#FF7300,#FFFB00,#48FF00,#00FFD5,#002BFF,#FF00CB,#FF0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+   
+  }#poc::before{
+    content: "";
+    background: linear-gradient(45deg, #FF0000,#FF7300,#FFFB00,#48FF00,#00FFD5,#002BFF,#FF00CB,#FF0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  
+  }
+  @keyframes glowing{
+    0% {background-position: 0 0;}
+    50%{background-position:400% 0;}
+    100% {background-position: 0 0;}
+  }
+  #poc:hover::before{
+    opacity: 1;
+    color:white;
+    font-weight: bold;
+  scale: 1.5;
+  }#poc:hover::after{
+    background: #f20044;
+  
+  }
+  
+  #poc:hover{
+    color: white;
+    font-weight: bold;
+    transform: scale(1.2);
+  }
+  #cop:hover::before{
+    opacity: 1;
+    color:white;
+    font-weight: bold;
+   
+  }
+  #po:hover::after{
+    background: transparent;
+  
+  }
+  
+  #cop:hover{
+    color:white;
+    font-weight: bold;
+    transform: scale(1.2);
+  }
+.input{
+    position: relative;
+    margin: 25px 0;
+}
+.input input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #00cfff;
+    outline: none;
+    border-radius: 40px;
+}
+button:hover {
+    text-decoration: underline;
+
+}
+.container {
+
+display: flex;
+
+height: 300px;
+width: 300px;
+background: #f20044;
+position: absolute;
+transform: rotate(-45deg);
+top: -100px;
+box-shadow: -10px 10px 90px #f20044;
+opacity: 0.5;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background:#f20044;
+    top: -45%;
+    border-radius: 150px;
+    }.container::after{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        background:#f20044;
+        right: -45%;
+        border-radius: 150px;
+        }
+        .container:hover{
+            opacity: 0.7;
+            animation: heart 0.6s linear infinite;
+        }
+       .parent:hover .container {
+            opacity: 0.7;
+            animation: heart 0.6s linear infinite;
+        }
+        @keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+.parent{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
